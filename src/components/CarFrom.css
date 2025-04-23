@@ -1,0 +1,50 @@
+/* CarForm.css */
+.car-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .input-field {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #f5a623; /* Dourado metálico */
+    outline: none;
+  }
+  
+  .submit-button,
+  .cancel-button {
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f5a623; /* Cor dourada */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .submit-button:hover,
+  .cancel-button:hover {
+    background-color: #d48a1d; /* Tom mais escuro */
+  }
+  
+  .cancel-button {
+    background-color: #444; /* Cor cinza escuro para o botão cancelar */
+  }
+  
+  .cancel-button:hover {
+    background-color: #555;
+  }
+  

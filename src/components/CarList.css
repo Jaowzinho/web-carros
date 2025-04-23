@@ -1,0 +1,63 @@
+/* CarList.css */
+.car-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .car-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #444; /* Fundo mais claro para os itens da lista */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+  }
+  
+  .car-item span {
+    font-size: 18px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 10px 18px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #28a745; /* Verde metálico */
+  }
+  
+  .delete-button {
+    background-color: #dc3545; /* Vermelho metálico */
+  }
+  
+  .edit-button:hover {
+    background-color: #218838;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .no-cars {
+    text-align: center;
+    font-size: 20px;
+    color: #777;
+  }
+  
