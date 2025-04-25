@@ -2,24 +2,20 @@ import React from 'react';
 import './CarList.css';
 
 function CarList({ cars, onEdit, onDelete }) {
-  if (cars.length === 0) return <p className="no-cars">Nenhum carro cadastrado.</p>;
+  if (cars.length === 0) return <p className="text-center">Nenhum carro cadastrado.</p>;
 
   return (
-    <ul className="car-list list-group">
+    <ul className="list-group">
       {cars.map((car) => (
-        <li key={car.id} className="car-item list-group-item d-flex justify-content-between align-items-center">
-          <span>{car.marca} - {car.modelo} - {car.ano}</span>
-          <div className="buttons">
-            <button 
-              onClick={() => onEdit(car)} 
-              className="edit-button btn btn-sm btn-outline-success"
-            >
+        <li key={car.id} className="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+          <div>
+            <strong>{car.marca}</strong> - {car.modelo} - {car.ano} - {car.motor}
+          </div>
+          <div className="button-group mt-2 mt-md-0 d-flex flex-column flex-md-row gap-2">
+            <button onClick={() => onEdit(car)} className="btn btn-sm btn-outline-success">
               Editar
             </button>
-            <button 
-              onClick={() => onDelete(car.id)} 
-              className="delete-button btn btn-sm btn-outline-danger"
-            >
+            <button onClick={() => onDelete(car.id)} className="btn btn-sm btn-outline-danger">
               Remover
             </button>
           </div>

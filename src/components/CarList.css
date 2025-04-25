@@ -1,62 +1,23 @@
-/* CarList.css */
-.car-list {
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-  margin-top: 30px;
+.list-group-item {
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
-.car-item {
+.list-group-item:hover {
+  background-color: #f1f3f5;
+}
+
+.button-group {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  margin-bottom: 15px;
-  background-color: #444; /* Fundo mais claro para os itens da lista */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
-  color: #fff;
-  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.car-item span {
-  font-size: 18px;
-}
-
-.buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.edit-button,
-.delete-button {
-  padding: 10px 18px;
-  font-size: 14px;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.edit-button {
-  background-color: #28a745; /* Verde metálico */
-}
-
-.delete-button {
-  background-color: #dc3545; /* Vermelho metálico */
-}
-
-.edit-button:hover {
-  background-color: #218838;
-}
-
-.delete-button:hover {
-  background-color: #c82333;
-}
-
-.no-cars {
-  text-align: center;
-  font-size: 20px;
-  color: #777;
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
 }
