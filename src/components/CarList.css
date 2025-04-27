@@ -1,23 +1,13 @@
-.list-group-item {
-  border: 1px solid #dee2e6;
-  border-radius: 0.375rem;
-  margin-bottom: 0.5rem;
-  transition: all 0.2s ease-in-out;
+.car-list {
+  list-style: none;
+  padding: 0;
 }
 
-.list-group-item:hover {
-  background-color: #f1f3f5;
+.car-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-.button-group {
+.buttons {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .button-group {
-    flex-direction: row;
-    gap: 0.5rem;
-  }
 }

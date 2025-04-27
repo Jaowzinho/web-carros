@@ -1,14 +1,25 @@
 .car-form {
-  background-color: #f8f9fa;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.car-form input {
-  border-radius: 0.375rem;
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #fff;
 }
 
-.car-form button {
-  min-width: 100px;
+.buttons-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button, .cancel-button {
+  width: 100px;
 }
